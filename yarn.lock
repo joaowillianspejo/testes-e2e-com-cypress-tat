@@ -382,10 +382,10 @@ cypress-mailosaur@^2.8.0:
   resolved "https://registry.yarnpkg.com/cypress-mailosaur/-/cypress-mailosaur-2.8.0.tgz#68cf6cad16cec41c68078533806bbb1ae07fc4b6"
   integrity sha512-y/Wrnlhge83HDLak7ywTHuwh0jantsFvD2DxpuQR+aiW0zoN3lNDZoaFAvIv4/1J7VQoYraD9eOanJVslTyQjQ==
 
-cypress@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-10.1.0.tgz#6514a26c721822a02bc194e9a7f72c3142aea174"
-  integrity sha512-aQ4JVZVib4Xd9FZW8IRZfKelUvqF4y5A+oUbNvn8TlsBmEfIg3m5Xd6Mt6PVU/jHiVJ9Psl905B3ZPnrDcmyuQ==
+cypress@^10.3.1:
+  version "10.3.1"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-10.3.1.tgz#7fab4ef43481c05a9a17ebe9a0ec860e15b95a19"
+  integrity sha512-As9HrExjAgpgjCnbiQCuPdw5sWKx5HUJcK2EOKziu642akwufr/GUeqL5UnCPYXTyyibvEdWT/pSC2qnGW/e5w==
   dependencies:
     "@cypress/request" "^2.88.10"
     "@cypress/xvfb" "^1.2.4"
