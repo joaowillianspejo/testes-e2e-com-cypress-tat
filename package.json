@@ -1,0 +1,24 @@
+{
+  "name": "testes-e2e-com-cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "João Willian Belarmino Spejo <joaowillian.spejo@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:open:tablet": "cypress open --config viewportWidth=767,viewportHeight=480",
+    "test": "cypress run",
+    "test:tablet": "cypress run --config viewportWidth=767,viewportHeight=480 --spec cypress/integration/authenticatedScenarios.spec.js",
+    "lint": "eslint cypress/**/*.js",
+    "lint:fix": "eslint cypress/**/*.js --fix"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "cypress": "^10.2.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mailosaur": "^2.8.0",
+    "eslint": "^8.17.0",
+    "eslint-plugin-cypress": "^2.12.1"
+  }
+}
