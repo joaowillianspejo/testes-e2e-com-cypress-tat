@@ -8,7 +8,7 @@
     "cy:open": "cypress open",
     "cy:open:tablet": "cypress open --config viewportWidth=767,viewportHeight=480",
     "test": "cypress run --record --tag 'desktop'",
-    "test:tablet": "cypress run --record --tag 'tablet' --config viewportWidth=767,viewportHeight=480 --spec cypress/e2e/authenticatedScenarios.cy.js",
+    "test:tablet": "cypress run --record --tag 'tablet' --config viewportWidth=767,viewportHeight=480 --spec cypress/e2e/authenticatedScenarios.cy.js --env grepTags=@desktop-and-tablet",
     "lint": "eslint cypress/**/*.js",
     "lint:fix": "eslint cypress/**/*.js --fix"
   },
@@ -17,6 +17,7 @@
     "@types/cypress": "^1.1.3",
     "cypress": "^10.3.1",
     "cypress-file-upload": "^5.0.8",
+    "cypress-grep": "^3.0.2",
     "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.8.0",
     "eslint": "^8.17.0",
