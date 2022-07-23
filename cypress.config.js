@@ -6,6 +6,8 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
 
+    projectId: 'ni67d9',
+
     baseUrl: 'https://notes-serverless-app.com',
 
     env: {
