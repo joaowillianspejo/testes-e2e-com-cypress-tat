@@ -1,52 +1,148 @@
 # Testes _end-to-end_ com Cypress
 
-Sample project to demonstrate end-to-end (e2e) tests written with Cypress running on a CI service.
+Projeto exemplo para demonstrar testes de ponta a ponta (e2e) com Cypress e executados em um serviço de CI.
 
-## Pre-requirements
+## Clonando e executando em sua máquina
 
-To run this project, you will need:
+### Pré-requisito:
 
-- [git](https://git-scm.com/downloads) (I've used version `2.37.1node` while writing this doc)
-- [nodejs](https://nodejs.org/en/) (I've used version `16.16.0` while writing this doc)
-- NPM (I've used version `8.11.0` while writing this doc)
-- [Yarn](https://classic.yarnpkg.com/en/docs/install) (I've used version `1.22.19` while writing this doc)
-- [Google Chrome](https://www.google.com/intl/en_us/chrome/) (I've used version `103.0.5060.134` while writing this doc)
+Para rodar esse projeto você vai precisar:
 
-**Note:** When installing nodejs, NPM is automatically installed too.
+![Node.js](https://img.shields.io/badge/Node.js-v16.16.0-black?logo=node.js&style=flat&logoColor=5FA04E)
+![Yarn](https://img.shields.io/badge/Yarn-v1.22.19-black?logo=yarn&style=flat&logoColor=2C8EBB)
+![Cypress](https://img.shields.io/badge/Cypress-v10.3.1-black?logo=cypress&style=flat&logoColor=69D3A7)
+![Git](https://img.shields.io/badge/Git-v2.51.0-black?logo=git&style=flat&logoColor=F05032)
 
-## Installation
+---
 
-### Using Yarn
+#### - **Node.js**
 
-To install the dev dependencies, run `yarn install` (or `yarn` for short.)
+Você encontra em: https://nodejs.org/pt-br/download
 
-### Using NPM
+#### - **Yarn**
 
-To install the dev dependencies, run `npm install` (or `npm i` for short.)
+Você encontra em: https://classic.yarnpkg.com/en/docs/install
 
-## Configuring the environment variables
+#### - **Visual Studio Code** _(ou editor de sua prefrência)_
 
-Before running the tests, some environment variables need to be set up.
+Você encontra em: https://code.visualstudio.com/download
 
-Make a copy of the [`cypress.env.example.json`](./cypress.env.example.json) file as `cypress.env.json`, and set the appropriate values for all the variables.
+#### - **Git**
 
-**Note:** `cypress.env.json` file is not tracked by git.
+Você encontra em: https://git-scm.com/install
 
-## Running the tests
+---
 
-In this project, you can run tests in interactive and headless modes, and on desktop and tablet viewports.
+#### ⬇️ Clonando o projeto
 
-### Headless mode
+Via terminal, rode os seguintes comandos:
 
-Run `yarn test` (or `npm test`) to run all tests in headless mode using a desktop viewport.
+```Shell
+git clone https://github.com/joaowillianspejo/testes-e2e-com-cypress-tat.git
+```
 
-Run `yarn test:tablet` (or `npm run test:tablet`) to run the appropriate tests in headless mode using a tablet viewport.
+```Shell
+cd testes-e2e-com-cypress-tat
+```
 
-### Interactive mode
+#### 📦 Para instalar as dependencias:
 
-Run `yarn cy:open` (or `npm run cy:open`) to open the Cypress Test Runner to run tests in interactive mode using a desktop viewport.
+Via terminal, na pasta do projeto, rode os seguintes comandos:
 
-Run `yarn cy:open:tablet` (or `npm run cy:open:tablet`) to open the Cypress Test Runner to run tests in interactive mode using a tablet viewport.
+##### Using Yarn
+
+```Shell
+yarn install
+```
+
+##### Using NPM
+
+```Shell
+npm install
+```
+
+#### ⚙️ Configurar variáveis do ambiente:
+
+Antes de rodar os testes, alguma variáveis de ambiente precisam serem configuradas:
+
+Faça uma cópia do [`cypress.env.example.json`](./cypress.env.example.json) e renomeie para `cypress.env.json`, em seguida preenchar as variáveis com os valores apropriados.
+
+>**Nota:** O arquivo `cypress.env.json` não é versionado no git.
+
+### Testes:
+
+Neste projeto, você pode executar testes nos modos Interativo e em Headless, tanto em telas de desktop quanto em tablets.
+
+Em um novo terminal, na pasta do projeto, rode os seguintes comandos:
+
+---
+#### 🧪 Modo Headless
+
+#### 💻 Desktop
+
+Para rodar os testes em proporção de tela de um desktop.
+
+##### Usando Yarn
+
+```Shell
+yarn test
+```
+
+##### Using NPM
+
+```Shell
+npm test
+```
+
+#### 📱 Tablet
+
+Para rodar os testes em proporção de tela de um tablet.
+
+##### Usando Yarn
+
+```Shell
+yarn test:tablet
+```
+
+##### Using NPM
+
+```Shell
+npm run test:tablet
+```
+---
+#### 🧪 Modo Interativo
+
+#### 💻 Desktop
+
+Para rodar os testes em proporção de tela de um desktop.
+
+##### Usando Yarn
+
+```Shell
+yarn cy:open
+```
+
+##### Using NPM
+
+```Shell
+npm run cy:open
+```
+
+#### 📱 Tablet
+
+Para rodar os testes em proporção de tela de um tablet.
+
+##### Usando Yarn
+
+```Shell
+yarn cy:open:tablet
+```
+
+##### Using NPM
+
+```Shell
+npm run cy:open:tablet
+```
 
 ---
 
